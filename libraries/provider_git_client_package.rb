@@ -2,7 +2,7 @@ class Chef
   class Provider
     class GitClient
       class Package < Chef::Provider::GitClient
-        provides :git_client, os: 'linux'
+        provides :git_client, os: ['linux', 'freebsd']
 
         action :install do
           # Software installation
